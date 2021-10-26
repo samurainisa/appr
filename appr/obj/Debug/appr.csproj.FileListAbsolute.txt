@@ -1,0 +1,113 @@
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\bin\Debug\appr.exe.config
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\bin\Debug\appr.exe
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\bin\Debug\appr.pdb
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\obj\Debug\appr.csproj.AssemblyReference.cache
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\obj\Debug\appr.Form1.resources
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\obj\Debug\appr.Properties.Resources.resources
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\obj\Debug\appr.csproj.GenerateResource.cache
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\obj\Debug\appr.csproj.CoreCompileInputs.cache
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\obj\Debug\appr.exe
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\obj\Debug\appr.pdb
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\bin\Debug\MathParser.org-mXparser.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\bin\Debug\ZedGraph.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\bin\Debug\ZedGraph.xml
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\source\repos\appr\appr\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\appr.exe.config
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\appr.exe
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\appr.pdb
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\MathParser.org-mXparser.dll
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\ZedGraph.dll
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\ZedGraph.xml
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\obj\Debug\appr.csproj.AssemblyReference.cache
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\obj\Debug\appr.Properties.Resources.resources
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\obj\Debug\appr.csproj.GenerateResource.cache
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\obj\Debug\appr.csproj.CoreCompileInputs.cache
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\obj\Debug\appr.csproj.CopyComplete
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\obj\Debug\appr.exe
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\obj\Debug\appr.pdb
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\obj\Debug\appr.frmMain.resources
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\obj\Debug\appr.csproj.ResolveComReference.cache
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\Google.Apis.Auth.dll
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\Google.Apis.Core.dll
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\Google.Apis.dll
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\Google.Apis.Sheets.v4.dll
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\Newtonsoft.Json.dll
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\Google.Apis.pdb
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\Google.Apis.xml
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\Google.Apis.Auth.xml
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\Google.Apis.Core.pdb
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\Google.Apis.Core.xml
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\Google.Apis.Sheets.v4.pdb
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\Google.Apis.Sheets.v4.xml
+C:\Users\vvm-i\Downloads\Telegram Desktop\mainprogramm\appr\appr\bin\Debug\Newtonsoft.Json.xml
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\obj\Debug\appr.csproj.ResolveComReference.cache
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\obj\Debug\appr.frmMain.resources
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\obj\Debug\appr.Properties.Resources.resources
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\obj\Debug\appr.csproj.GenerateResource.cache
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\obj\Debug\appr.csproj.CoreCompileInputs.cache
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\obj\Debug\appr.exe
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\obj\Debug\appr.pdb
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\appr.exe.config
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\appr.exe
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\appr.pdb
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\Google.Apis.Auth.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\Google.Apis.Core.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\Google.Apis.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\Google.Apis.Sheets.v4.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\MathParser.org-mXparser.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\Newtonsoft.Json.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\ZedGraph.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\Google.Apis.pdb
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\Google.Apis.xml
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\Google.Apis.Auth.xml
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\Google.Apis.Core.pdb
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\Google.Apis.Core.xml
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\Google.Apis.Sheets.v4.pdb
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\Google.Apis.Sheets.v4.xml
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\Newtonsoft.Json.xml
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\ZedGraph.xml
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\workspace.DESKTOP-N5S6IG3\Desktop\appr\appr\obj\Debug\appr.csproj.AssemblyReference.cache

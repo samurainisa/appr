@@ -6,10 +6,11 @@ using org.mariuszgromada.math.mxparser;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ZedGraph;
+using Action = System.Action;
 using Application = Microsoft.Office.Interop.Excel.Application;
 using Color = System.Drawing.Color;
 
@@ -36,14 +37,19 @@ namespace appr
                 else
                 {
                     GraphPane pane = zedGraphControl1.GraphPane;
+
+
                     pane.CurveList.Clear();
                     PointPairList list_points = new PointPairList();
                     List<double> values = new List<double>();
 
+                    
                     for (int i = 0; i < dataGridView1.Rows.Count; i++)
                     {
-                        list_points.Add(Convert.ToDouble(dataGridView1[0, i].Value), Convert.ToDouble(dataGridView1[1, i].Value));
-                        //ошибка неверный формат ввода если первый столбец Х пуст
+                        if(dataGridView1[1, i].Value != null && dataGridView1[0, i].Value != null)
+                        {
+                            list_points.Add(Convert.ToDouble(dataGridView1[0, i].Value), Convert.ToDouble(dataGridView1[1, i].Value));
+                        }
                     }
 
                     LineItem line = pane.AddCurve("Точки", list_points, Color.Red, SymbolType.Circle);
@@ -54,13 +60,11 @@ namespace appr
                     line.Symbol.Size = 3;
 
                     zedGraphControl1.IsShowPointValues = true;
-
                     await buildasync();
 
                     pane.Title.Text = "Метод наименьших квадратов";
                     zedGraphControl1.AxisChange();
                     zedGraphControl1.Invalidate();
-                    dataGridView1.AllowUserToAddRows = true;
                 }
             }
 
@@ -73,6 +77,7 @@ namespace appr
 
         private void quadraticFunc()
         {
+
             double xi = 0;
             double yi = 0;
             double xy = 0;
@@ -107,13 +112,10 @@ namespace appr
             avgY = yi / n;
 
             det = (x2 * x2 * x2) + (xi * xi * x4) + (x3 * x3 * n) - (n * x2 * x4) - (xi * x2 * x3) - (xi * x3 * x2);
-
             deta = (yi * x2 * x2) + (xi * xi * x2y) + (xy * x3 * n) - (x2y * x2 * n) - (xi * x2 * xy) - (yi * xi * x3);
             a = deta / det;
-
             detb = (x2 * x2 * xy) + (yi * xi * x4) + (x3 * x2y * n) - (x4 * xy * n) - (yi * x2 * x3) - (x2 * xi * x2y);
             b = detb / det;
-
             detc = (x2 * x2 * x2y) + (xi * xy * x4) + (x3 * x3 * yi) - (x4 * x2 * yi) - (xi * x2y * x3) - (x2 * xy * x3);
             c = detc / det;
 
@@ -152,6 +154,9 @@ namespace appr
                     quaddeterm += Convert.ToString(Math.Round(c, 3)).Replace(',', '.');
                 }
             }
+            GraphPane pane = zedGraphControl1.GraphPane;
+
+
             for (int i = 0; i < dataGridView1.RowCount; i++)
             {
                 if (Convert.ToDouble(dataGridView1[0, i].Value) > maximum)
@@ -164,9 +169,9 @@ namespace appr
                 }
             }
 
+
             for (int i = Convert.ToInt32(minimum); i <= maximum; i++)
             {
-
                 quadraticList.Add(i, func(i, exp));
             }
 
@@ -184,12 +189,13 @@ namespace appr
             Invoke((MethodInvoker)delegate { addPoints(quadraticList, "Квадратичная функция"); });
         }
 
+
         private async Task buildasync()
         {
             await Task.Run(() => linearFunc());
             await Task.Run(() => quadraticFunc());
         }
-
+        static ZedGraph.ZedGraphControl graph = new ZedGraph.ZedGraphControl();
         private void linearFunc()
         {
             double xi = 0;
@@ -251,7 +257,6 @@ namespace appr
 
             linearcorel.Invoke((MethodInvoker)delegate { linearcorel.Text = linD.ToString("F" + 4); });
             linear.Invoke((MethodInvoker)delegate { linear.Text = lineardeterm; });
-
             Invoke((MethodInvoker)delegate { addPoints(linearList, "Линейная функция"); });
         }
 
@@ -303,6 +308,15 @@ namespace appr
                 Workbook ObjWorkBook = ObjWorkExcel.Workbooks.Open(openFileDialog1.FileName, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing); //открыть файл
                 Worksheet ObjWorkSheet = (Worksheet)ObjWorkBook.Sheets[1];
 
+                var lastCell = ObjWorkSheet.Cells.SpecialCells(GetXlCellTypeLastCell());
+                int lastColumn = lastCell.Column;
+                int lastRow = lastCell.Row;
+
+                if (lastRow <= 2)
+                {
+                    MessageBox.Show("Недостаточное количество точек, должно быть не менее 3", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
                 if (ObjWorkSheet.Rows.CurrentRegion.EntireRow.Count == 1)
                 {
                     MessageBox.Show("No data found.");
@@ -310,8 +324,6 @@ namespace appr
 
                 else
                 {
-                    var lastCell = ObjWorkSheet.Cells.SpecialCells(XlCellType.xlCellTypeLastCell);
-
                     string sx = String.Empty;
                     string sy = String.Empty;
 
@@ -337,10 +349,15 @@ namespace appr
             }
         }
 
+        private static XlCellType GetXlCellTypeLastCell()
+        {
+            return XlCellType.xlCellTypeLastCell;
+        }
+
+
+
         private static readonly string[] Scopes = { SheetsService.Scope.Spreadsheets };
-        private const string SpreadsheetId = "1GoOUEb2OdQWLqPIJbEB_wMnfy4sJwc4cSkdMra2AEKM";
         private const string GoogleCredentialsFileName = "clients_secrets.json";
-        private const string ReadRange = "sheet1!A:B";
 
         private async void googleDocsToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -356,7 +373,7 @@ namespace appr
             }
             catch (Exception)
             {
-                MessageBox.Show($"Количество элементов X != количеству элементам Y\nНекоторые элементы будут упущены", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Проверьте правильность ID и название листа!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -374,8 +391,8 @@ namespace appr
         }
 
         private async Task ReadAsync(SpreadsheetsResource.ValuesResource valuesResource)
-        {
-            var response = await valuesResource.Get(SpreadsheetId, ReadRange).ExecuteAsync();
+        {    string ReadRange = googlelistname.Text + "!A:B";
+            var response = await valuesResource.Get(googleid.Text, ReadRange).ExecuteAsync();
             var values = response.Values;
 
             if (values == null || values.Count == 0)
@@ -414,18 +431,17 @@ namespace appr
         }
         private void очиститьToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
+            Clear();
+        }
+
+        private void Clear()
+        {
             dataGridView1.Rows.Clear();
 
             GraphPane pane = zedGraphControl1.GraphPane;
             zedGraphControl1.GraphPane.CurveList.Clear();
             zedGraphControl1.AxisChange();
             zedGraphControl1.Invalidate();
-
-            quad.Text = "";
-            linear.Text = "";
-            linearcorel.Text = "";
-            quadcorel.Text = "";
-            textBox1.Text = "";
 
             pane.XAxis.Scale.MinAuto = true;
             pane.XAxis.Scale.MaxAuto = true;
@@ -462,9 +478,11 @@ namespace appr
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
+        
 
         public void zedGraphDesign()
         {
+
             GraphPane graphfield = zedGraphControl1.GraphPane;
             graphfield.Border.Color = Color.Black;
             graphfield.Chart.Border.Color = Color.Black;
@@ -485,6 +503,7 @@ namespace appr
             graphfield.XAxis.Scale.FontSpec.FontColor = Color.Silver;
             graphfield.YAxis.Scale.FontSpec.FontColor = Color.Silver;
             graphfield.Title.FontSpec.FontColor = Color.White;
+
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -500,41 +519,49 @@ namespace appr
         //генератор через N
         private void button2_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.Clear();
+            Thread t = new Thread(new ThreadStart(genAsync));
+            t.Start();
+        }
+        public void GenerateData()
+        {
+            dataGridView1.Invoke((MethodInvoker)delegate { dataGridView1.Rows.Clear(); });
 
             if (textBox1.Text == "" || textBox1.Text == "0" || textBox1.Text == "1" || textBox1.Text == "2")
             {
                 MessageBox.Show("Введите количество строк N\nДля построения квадратичной фуникции должно быть не меньше 3 точек!");
-                return;
             }
 
-            if (double.Parse(textBox1.Text) >= 20000)
+            else
             {
-                MessageBox.Show("При таком большом количестве точек программа будет работать медленнее", "Предупреждение");
-            }
+                dataGridView1.Invoke((MethodInvoker)delegate { dataGridView1.AllowUserToAddRows = false; });
+                int Yn = Convert.ToInt32(textBox1.Text);
 
-            button1.Enabled = false;
-            dataGridView1.AllowUserToAddRows = false;
-            int Yn = Convert.ToInt32(textBox1.Text);
-            dataGridView1.Rows.Add(Yn);
-            Random rnd = new Random();
+                Random rnd = new Random();
 
-            for (int row = 0; row < dataGridView1.Rows.Count; row++)
-            {
-                for (int col = 0; col < dataGridView1.Columns.Count; col++)
+                for (int row = 0; row < Yn; row++)
+
                 {
-                    dataGridView1[col, row].Value = rnd.Next(100);
+                    dataGridView1.Invoke((MethodInvoker)delegate { dataGridView1.Rows.Add(); });
+                    
+                    dataGridView1[0, row].Value = rnd.Next(100);
+                    dataGridView1[1, row].Value = rnd.Next(100);
                 }
+
+                dataGridView1.Invoke((MethodInvoker)delegate { dataGridView1.AllowUserToAddRows = true; });
             }
-            dataGridView1.AllowUserToAddRows = true;
-            button1.Enabled = true;
         }
+
+        private async void genAsync()
+        {
+            await Task.Run(() => GenerateData());
+        }
+
+
 
         private void справкаToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("1. Для правильного построения графика требуется не менее 3 точек в таблице\n2.Если много точек будут повторяться в значениях, расчеты могут быть неверны\n3.Количество элементов X должно быть равно количеству элементов Y");
         }
-
     }
 }
 
